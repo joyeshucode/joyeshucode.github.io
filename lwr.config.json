@@ -1,0 +1,66 @@
+{
+    "lwc": { "modules": [{ "dir": "$rootDir/src/modules" }] },
+    "routes": [
+        {
+            "id": "About",
+            "path": "/",
+            "rootComponent": "components/portfolio",
+            "layoutTemplate": "$layoutsDir/index.html",
+			"properties" : {
+				"title": "About"
+			},
+			"bootstrap": {
+                "syntheticShadow": true
+            }
+        },
+		{
+            "id": "Posts",
+            "path": "/posts",
+            "rootComponent": "components/blogPostsList",
+            "layoutTemplate": "$layoutsDir/index.html",
+			"properties" : {
+				"title": "Posts"
+			},
+			"bootstrap": {
+                "syntheticShadow": true
+            }
+        },
+		{
+            "id": "Post",
+            "path": "/posts/:id",
+            "rootComponent": "components/post",
+            "layoutTemplate": "$layoutsDir/index.html",
+			"properties" : {
+				"title": ":id"
+			},
+			"bootstrap": {
+                "syntheticShadow": true
+            }
+        }
+    ],
+    "assets": [
+        {
+			"alias": "assetsDir",
+			"dir": "$rootDir/src/assets",
+			"urlPath": "/public/assets"
+		},
+		{
+			"alias": "postsDir",
+			"dir": "$rootDir/src/data/blog/",
+			"urlPath": "/public/blog"
+		},
+		{
+			"alias": "sldsDir",
+			"dir": "$rootDir/node_modules/@salesforce-ux/design-system/assets/",
+			"urlPath": "/public/slds/assets/"
+		},
+		{
+			"alias": "markdownDir",
+			"dir": "$rootDir/node_modules/github-markdown-css/",
+			"urlPath": "/public/md/assets/styles/"
+		}
+    ],
+	"staticSiteGenerator": {
+    "outputDir": "doc" 
+  }
+}

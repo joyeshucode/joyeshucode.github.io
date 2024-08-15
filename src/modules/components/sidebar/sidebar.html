@@ -1,0 +1,41 @@
+<template>
+    <div class="slds-box slds-text-align_center about_section">
+        <div class="profile-container">
+            <img src={profileImage} alt="Profile Image" class="profile-image"/>
+        </div>
+        <div class="slds-text-heading_large about_section_title">{name}</div>
+        <div class="slds-text-heading_medium about_section_subtitle">
+            {title}
+        </div>
+        <div class="slds-text-align_center">
+            <ul class="slds-list_horizontal slds-has-dividers_left slds-has-block-links_space">
+                <li class="slds-item">
+                    <a href="/posts" title="Posts">Posts</a>
+                </li>
+                <li class="slds-item">
+                    <a href="/" title="About">About</a>
+                </li>
+            </ul>
+        </div>
+        <div class="slds-text-align_center">
+            <ul class="slds-list_horizontal slds-has-dividers_left slds-has-block-links_space">
+                <template for:each={socialLinks} for:item="link">
+                    <li key={link.title} class="slds-item">
+                        <a href={link.url}>
+                            <img class="slds-icon slds-icon_large" title={link.title} alt={link.title}
+                                aria-hidden="true" src={link.imgUrl}/>
+                        </a>
+                    </li>
+                </template>
+            </ul>
+        </div>
+        <div class="footer-container">
+            Built with <span class="heart">♥</span> using 
+            <span><a href="https://developer.salesforce.com/docs/platform/lwr/overview" target="_blank"> LWR </a>, 
+            <a href="https://lwc.dev/" target="_blank"> LWC OSS </a>, 
+            and <a href="https://www.lightningdesignsystem.com/" target="_blank"> SLDS </a></span>
+            
+        </div>
+        <span>© {name} 2024</span>
+    </div>   
+</template>

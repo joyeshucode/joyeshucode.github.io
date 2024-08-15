@@ -1,0 +1,8 @@
+# Dependency directories
+node_modules/
+
+# build output
+.doc
+
+#temp and cache directory
+.__lwr_cache__

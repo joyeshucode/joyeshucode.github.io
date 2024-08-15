@@ -1,0 +1,97 @@
+:root {
+    --color-bg-hero: #e4f2f8;
+    --color-bg-hero-dark: #d5e8f0;
+    --color-bg-section: #ffffff;
+    --color-bg-section-shade: #f4f5f6;
+    --color-bg-footer: #f7f7f7;
+    --color-bg-card: #e4f2f8;
+    --color-bg-search: #f4f5f6;
+    --color-text-link-footer: #707070;
+    --primary-color-blue: #02a0e0;
+    --primary-color-darkblue: #16325c;
+    --primary-color-blue-highlight: #def1fa;
+    --spotlight-bg: #ffffff;
+    --sidebar-width: 250px;
+    --sidebar-width-full: 300px;
+    --border-gray: #eee solid 2px;
+    --card-box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+        0 1px 3px 0 rgba(0, 0, 0, 0.12);
+    --trigger-box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    --nav-box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+
+    /* button colors */
+    --button-color: #ffffff;
+    --button-color-bg: #02a0e0;
+    --button-color-bg-active: #007aac;
+    --button-brand-color-bg: #ff6000;
+    --button-brand-color-bg-active: #df5400;
+}
+
+body {
+    display: inline;
+    justify-content: center;
+    margin: 20px;
+    
+}
+
+
+html {
+    font-family: Fira Sans Condensed, Arial, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.6;
+    box-sizing: border-box;
+}
+
+ul li a:hover {
+    color: #f5f5f5;
+    text-decoration: underline;
+    transition: border-bottom .2s, color .2s;
+}
+
+main {
+    min-width: 100%;
+    justify-self: start;
+}
+
+ul {
+    list-style: none;
+    margin-top: 0;
+    padding-left: 0;
+    display: inline-block;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.roundImg{
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    max-width: none;
+}
+.about_section {
+    background-color: #1a2e47;
+    color: #f5f5f5;
+    text-align: center;
+    font-family: Fira Sans Condensed, Arial, sans-serif;
+    border-radius: 0rem;
+    border: 0px;
+}
+.content {
+    min-height: 100%;
+}
+.about_section_title {
+    font-size: 2.875rem;
+    font-weight: 400;
+    line-height: 4.25rem;
+    margin: 0;
+}
+.about_section_subtitle {
+    color: #6c7a7a;
+    font-size: 1.375rem;
+    font-weight: 400;
+    line-height: 2.125rem;
+}

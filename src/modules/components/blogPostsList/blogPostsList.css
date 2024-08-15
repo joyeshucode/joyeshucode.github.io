@@ -1,0 +1,11 @@
+.post-title-section {
+    padding: 1rem 0rem;
+}
+.posts {
+    height: 100vh;
+}
+.posts h1 {
+    margin: 1.25rem 1.25rem 1.5rem 0rem;
+    border-bottom: black;
+    border-bottom: 0.25rem solid black;
+}

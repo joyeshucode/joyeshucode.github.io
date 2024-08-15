@@ -1,0 +1,10 @@
+<template>
+    <template if:true={post}>
+        <h1>{post.metadata.title}</h1>
+        <div lwc:ref="postContent" lwc:dom="manual" class="post-content markdown-body">
+        </div>
+    </template>
+    <template if:false={post}>
+        <h1> {errorMessage} </h1>
+    </template>
+</template>
