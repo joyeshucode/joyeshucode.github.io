@@ -2,7 +2,7 @@
 node_modules/
 
 # build output
-.doc
+doc/
 
 #temp and cache directory
-.__lwr_cache__
+__lwr_cache__/
