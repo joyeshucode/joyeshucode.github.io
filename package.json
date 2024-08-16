@@ -1,36 +1,36 @@
 {
-  "name": "resume-nw",
-  "version": "0.0.1",
-  "license": "MIT",
-  "private": true,
-  "type": "module",
-  "scripts": {
-    "clean": "rimraf node_modules __lwr_cache__ site",
-    "dev": "lwr dev --scripts",
-    "dev:compat": "lwr dev --mode compat",
-    "build": "lwr build --clean",
-    "build:prod-compat": "lwr build --clean --mode prod-compat",
-    "start": "lwr start",
-    "stage": "yarn build && yarn start",
-    "stage:prod-compat": "yarn build:prod-compat && yarn start",
-    "scripts": "node src/scripts/generatePostIndex.js"
-  },
-  "dependencies": {
-    "@salesforce-ux/design-system": "^2.24.5",
-    "fs": "^0.0.1-security",
-    "github-markdown-css": "^5.6.1",
-    "gray-matter": "^4.0.3",
-    "lwc": "latest",
-    "lwr": "0.13.3",
-    "markdown-it": "^14.1.0",
-    "path": "^0.12.7",
-    "yaml": "^2.5.0",
-    "yarn": "^1.22.22"
-  },
-  "engines": {
-    "node": ">=18.0.0"
-  },
-  "volta": {
-    "node": "18.18.2"
-  }
+	"name": "resume-lwc-oss",
+	"version": "0.0.1",
+	"license": "MIT",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"clean": "rimraf node_modules __lwr_cache__ site",
+		"dev": "lwr dev",
+		"dev:compat": "lwr dev --mode compat",
+		"build": "lwr build --clean scripts",
+		"build:prod-compat": "lwr build --clean --mode prod-compat",
+		"start": "lwr start",
+		"stage": "yarn build && yarn start",
+		"stage:prod-compat": "yarn build:prod-compat && yarn start",
+		"scripts": "node src/scripts/generatePostIndex.js"
+	},
+	"dependencies": {
+		"@salesforce-ux/design-system": "^2.24.5",
+		"fs": "^0.0.1-security",
+		"github-markdown-css": "^5.6.1",
+		"gray-matter": "^4.0.3",
+		"lwc": "latest",
+		"lwr": "0.13.3",
+		"markdown-it": "^14.1.0",
+		"path": "^0.12.7",
+		"yaml": "^2.5.0",
+		"yarn": "^1.22.22"
+	},
+	"engines": {
+		"node": ">=18.0.0"
+	},
+	"volta": {
+		"node": "18.18.2"
+	}
 }
