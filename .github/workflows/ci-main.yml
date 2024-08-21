@@ -20,7 +20,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: "github-pages"
-          path: "dist"
+          path: "doc"
   
   deploy:
     needs: build
