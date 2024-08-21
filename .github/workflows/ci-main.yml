@@ -1,0 +1,32 @@
+name: Generate Static Pages
+on:
+  push:
+    branches: '*'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4.0.3
+      - uses: actions/setup-node@v4.0.3
+        with:
+          node-version: 20
+      - run: npm ci
+      - run: npm test
+      - run: npm run build:prod-compat
+  
+  deploy:
+    needs: build
+    permissions:
+      pages: write      # to deploy to Pages
+      id-token: write   # to verify the deployment originates from an appropriate source
+
+    environment:
+      name: github-pages
+
+    runs-on: ubuntu-latest
+    steps:
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v4
+        
