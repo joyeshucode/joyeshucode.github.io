@@ -17,7 +17,7 @@ jobs:
       - run: npm run build:prod-compat
       - name: Upload artifact
         id: github-pages
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-artifact@v4
         with:
           name: "github-pages"
           path: "doc"
